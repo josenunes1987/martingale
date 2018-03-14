@@ -100,7 +100,7 @@ budget, roulletteMinimumBet, doubleZero, target = inputData()
 targetReachedList=[]
 numPlaysList=[]
 for i in range(1000):
-    targetReached, numPlays = play(20,0.5,100)
+    targetReached, numPlays = play(budget,roulletteMinimumBet,target)
     targetReachedList.append(targetReached)
     numPlaysList.append(numPlays)
 outputData(targetReachedList,numPlaysList, budget, target)    
